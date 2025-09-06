@@ -2,13 +2,16 @@ import { Routes, Route } from "react-router";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Agence from "./Pages/Agence";
+import Navbar from "./Components/Navigation/Navbar";
+import FullScreenNav from "./Components/Navigation/FullScreenNav";
 function App() {
   
   return (
     <>
       <div>
         
-       
+       <Navbar />
+       <FullScreenNav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

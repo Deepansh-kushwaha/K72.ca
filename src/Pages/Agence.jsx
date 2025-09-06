@@ -36,11 +36,10 @@ function Agence() {
         scrub: 1,
         anticipatePin: 1,
         invalidateOnRefresh: true,
-        markers: true,
         onUpdate: (elem) => {
           const imgIndex = Math.floor(elem.progress * (imgArray.length-1))
           imgRef.current.src = imgArray[imgIndex];
-          console.log(imgIndex)
+        
         }  
       }
      
